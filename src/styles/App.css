@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+body {
+  background-color: #FAFAD2;
+}
+
+.layout-content {
+  border-radius: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2vw;
+  background-color: #e67e22;
+  border-radius: 5vw;
+}
+
+.navbar a {
+  padding: 2vw 5vw;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.children {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 1.3em;
+}
+
+.sub-title {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 1.3em;
+}
+
+.main-pic-div img {
+  max-height: 40vw;
+  max-width: 40vw;
+}
+
+.homebutton {
+  background-color: blue;
+  color: white;
+  font-size: 1.5em;
+  padding: 3vw;
+  border-radius: 5vw;
+  border: none;
+  margin-bottom: 5vw;
+}
+
+.portfolio-img-div img {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  height: 40vw;
+  width: 60vw;
+  border-radius: 50%;
+}
+
+.about-pic-div img {
+  max-height: 20vw;
+  max-width: 20vw;
+  border-radius: 50%;
+  float: left;
+  padding: 0 3vw;
+}
+
+.about-pic-div p {
+  text-align: left;
+  font-family: 'Roboto', sans-serif
+}
