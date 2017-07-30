@@ -5,6 +5,8 @@ import BaseLayout from './BaseLayout'
 import Home from './Home'
 import About from './About'
 import Portfolio from './Portfolio'
+import Contacts from './Contacts'
+import References from './References'
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <BrowserRouter>
           <BaseLayout>
             <Switch>
+              <Route path='/contacts' component={Contacts} />
+              <Route path='/references' component={References} />
               <Route path='/portfolio' component={Portfolio} />
               <Route path='/about' component={About} />
               <Route path='/' component={Home} />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 export default class BaseLayout extends Component {
   render() {
@@ -7,9 +7,11 @@ export default class BaseLayout extends Component {
       <div className='whole-page'>
         <div className='layout-content'>
           <div className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/about">About</Link>
+            <NavLink exact to="/" activeStyle={{color: 'yellow'}} activeClassName='selected'>Home</NavLink>
+            <NavLink to="/portfolio" activeStyle={{color: 'yellow'}} activeClassName='selected'>Portfolio</NavLink>
+            <NavLink to="/about" activeStyle={{color: 'yellow'}} activeClassName='selected'>About</NavLink>
+            <NavLink to="/contacts" activeStyle={{color: 'yellow'}} activeClassName='selected'>Contacts</NavLink>
+            <NavLink to="/references" activeStyle={{color: 'yellow'}} activeClassName='selected'>References</NavLink>
           </div>
           <div className="children">
             {this.props.children}
